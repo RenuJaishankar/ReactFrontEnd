@@ -7,8 +7,8 @@ const Fruitnavbar = () => (
       <a className="navbar-item" href="https://bulma.io"> </a> 
       
       <p>HI image is displayed here</p>
-      <img src={"https://www.pngrepo.com/png/3011/170/apple.png"}
-                    width="28" height="28"> </img>
+      <img src="https://www.pngrepo.com/png/3011/170/apple.png" width="28" height="28" />
+      {/* img tags in react need to be self closing with /> at the end! */}
                    
 
       <a className="navbar-item">
