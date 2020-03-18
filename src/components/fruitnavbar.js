@@ -1,15 +1,16 @@
-import React from "React"
+import React from "react"
 
 const Fruitnavbar = () => (
 
 <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <a className="navbar-item" href="https://github.com/RenuJaishankar">
+      <a className="navbar-item" href="https://bulma.io"> </a> 
       
       <p>HI image is displayed here</p>
-       <img src="https://www.pngrepo.com/png/3011/170/apple.png"
+      <img src={"https://www.pngrepo.com/png/3011/170/apple.png"}
                     width="28" height="28"> </img>
-       </a>
+                   
+
       <a className="navbar-item">
         Super Cool Fruit API
                </a>

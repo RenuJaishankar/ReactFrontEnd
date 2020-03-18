@@ -1,6 +1,8 @@
 import React from "react"
 import "./mystyles.scss"
 import Fruitnavbar from "../components/fruitnavbar.js"
+import Imgfruit from "../components/apple.png"
+import Newheading from "../components/NewHeading.js"
 const newtest = () => (
 
   <div className="container">
@@ -10,7 +12,10 @@ const newtest = () => (
             // <div class="columns is-centered">
                 
             </div>  */}
-
+    <Newheading />
+    
+    <img src={Imgfruit} alt={"Website fruit"}/>
+    <Fruitnavbar />
     <div className="columns">
 
       <div className="column">
