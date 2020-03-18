@@ -12,10 +12,7 @@ const newtest = () => (
             // <div class="columns is-centered">
                 
             </div>  */}
-    <Newheading />
-    
-    <img src={Imgfruit} alt={"Website fruit"}/>
-    <Fruitnavbar />
+  <Fruitnavbar />
     <div className="columns">
 
       <div className="column">
