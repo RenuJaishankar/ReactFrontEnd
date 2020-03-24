@@ -2,17 +2,13 @@ import React from "react"
 import "./mystyles.scss"
 import Fruitnavbar from "../components/fruitnavbar.js"
 import Imgfruit from "../components/apple.png"
+import { graphql } from 'gatsby'
 import Newheading from "../components/NewHeading.js"
-const newtest = () => (
+const newtest = ({ data }) => (
 
   <div className="container">
 
-
-    {/* <div class="container is-fluid">
-            // <div class="columns is-centered">
-                
-            </div>  */}
-  <Fruitnavbar />
+    <Fruitnavbar />
     <div className="columns">
 
       <div className="column">
@@ -31,54 +27,64 @@ const newtest = () => (
         <input id="Title" className="input" type="text" placeHolder="COLOR"></input>
 
       </div>
+      <div className= "column">
+        <button class="button"  >SUBMIT FRUIT</button>
+      </div>
+
+      </div>
+        
+        <table className="table" >
+            <thead>
+              FRUIT TABLE 
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>
+                  ID
+                                </th>
+                <th>
+                  NAME
+                                </th>
+
+                <th>
+                  STATE
+                                </th>
+                <th>
+                  COLOR
+                                </th>
+
+              </tr>
+              {data.java.fruits.map(
+                el => <tr>
+                  <td>{el.id}</td>
+                  <td>{el.name}</td>
+                  <td>{el.state}</td>
+                  <td>{el.color}</td>
+
+                </tr>
+
+              )}
+
+            </tbody>
+        </table>
+      
     </div>
-
-
-
-
-    <table className="table" >
-      <thead>
-        <tr>
-          <td>
-            ID
-                                </td>
-          <td>
-            NAME
-                                </td>
-
-          <td>
-            STATE
-                                </td>
-          <td>
-            COLOR
-                                </td>
-          <td>
-          </td>
-
-        </tr>
-      </thead>
-      <tbody>
-
-      </tbody>
-    </table>
-
-    {/* <div className="columns">
-        <div className="column">
-          <h2 className="title is-2">Level 2 heading</h2>
-          <p className="content">Cool content. Using Bulma!</p>
-        </div>
-        <div className="column is-four-fifths">
-          <h2 className="title is-2">Level 2 heading</h2>
-          <p className="content">This column is cool too!</p>
-        </div>
-      </div> */}
-
-
-  </div>
-
-
-
+  
 
 )
-
+export const query = graphql`
+query MyQuery {
+  java{
+  
+    fruits{
+      name
+      state
+      color
+      }   
+      
+ }
+   
+}
+`
 export default newtest

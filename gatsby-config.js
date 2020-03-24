@@ -28,8 +28,30 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+       resolve: "gatsby-source-graphql",
+       options:{
+        //This type will contain remote schema query type
+         typeName:"JavaAPI",
+         //This is the field under which it is accessible.
+         fieldName:"java",
+         //URL to query from
+         url: "http://localhost:8080/graphql"
+       },
+      },
+     // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+    ],
+  }
+
+
+
+
+    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
-}
+  
+

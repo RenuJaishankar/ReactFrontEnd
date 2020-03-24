@@ -6,14 +6,15 @@ const Fruitnavbar = () => (
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io"> </a> 
       
-      <p>HI image is displayed here</p>
-      <img src="https://www.pngrepo.com/png/3011/170/apple.png" width="28" height="28" />
+           <img src="https://www.pngrepo.com/png/3011/170/apple.png" width="28" height="28" />
       {/* img tags in react need to be self closing with /> at the end! */}
                    
-
-      <a className="navbar-item">
+      <div style={{ height: 50}}>
+      <a className="navbar-item" style={{fontSize:20,fontWeight:"bold",fontFamily:"Verdana"}}>
+   
         Super Cool Fruit API
                </a>
+       </div>         
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
         <span aria-hidden="true"></span>
