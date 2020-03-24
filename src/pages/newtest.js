@@ -2,13 +2,12 @@ import React from "react"
 import "./mystyles.scss"
 import Fruitnavbar from "../components/fruitnavbar.js"
 import Imgfruit from "../components/apple.png"
+import Imgbck from "../images/fruitimage.png"
 import { graphql } from 'gatsby'
 import Newheading from "../components/NewHeading.js"
 const newtest = ({ data }) => (
 
-  <div className="container">
-
-    <Fruitnavbar />
+  <div className="container" style={{backgroundImage: `url(${https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-simple-fruit-background-picture-image_254291.jpg})`}}>
     <div className="columns">
 
       <div className="column">
@@ -34,7 +33,7 @@ const newtest = ({ data }) => (
       </div>
         
         <table className="table" >
-            <thead>
+            <thead style = {{fontSize:20,fontFamily:"Lucida Sans"}}>
               FRUIT TABLE 
             </thead>
 

@@ -10,7 +10,7 @@ const Fruitnavbar = () => (
       {/* img tags in react need to be self closing with /> at the end! */}
                    
       <div style={{ height: 50}}>
-      <a className="navbar-item" style={{fontSize:20,fontWeight:"bold",fontFamily:"Verdana"}}>
+      <a className="navbar-item" style={{fontSize:30,fontWeight:"bold",fontFamily:"Verdana"}}>
    
         Super Cool Fruit API
                </a>
