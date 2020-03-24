@@ -3,9 +3,12 @@ import "./mystyles.scss"
 import Fruitnavbar from "../components/fruitnavbar.js"
 import Imgfruit from "../components/apple.png"
 import Newheading from "../components/NewHeading.js"
+import '../components/backgroundImage.js'
 const newtest = () => (
 
-  <div className="container">
+  // here is a hardcoded example of using a background image with inline styling
+  // note the quotations around the actual url
+  <div className="container" style={{backgroundImage:`url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")`}}>
 
 
     {/* <div class="container is-fluid">
