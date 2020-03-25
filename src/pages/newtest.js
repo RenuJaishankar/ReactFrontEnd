@@ -6,8 +6,10 @@ import Imgbck from "../images/fruitimage.png"
 import { graphql } from 'gatsby'
 import Newheading from "../components/NewHeading.js"
 const newtest = ({ data }) => (
+  <div className="container" style={{backgroundImage:`url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")`}}>
 
-  <div className="container" style={{backgroundImage: `url(${https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-simple-fruit-background-picture-image_254291.jpg})`}}>
+  
+    <Fruitnavbar/>
     <div className="columns">
 
       <div className="column">
