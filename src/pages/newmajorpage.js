@@ -5,55 +5,48 @@ import Imgfruit from "../components/apple.png"
 import Imgbck from "../images/fruitimage.png"
 import { graphql } from 'gatsby'
 import Newheading from "../components/NewHeading.js"
-const newtest = ({ data }) => (
+const newmajorpage = ({ data }) => (
   <div className="container" style={{backgroundImage:`url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")`}}>
 
   
-    <Fruitnavbar/>
+    
     <div className="columns">
 
+      
       <div className="column">
-        <input id="Title" className="input" type="text" placeHolder="FRUIT ID"></input>
+        <input id="Title" className="input" type="text" placeHolder="MAJOR"></input>
 
       </div>
       <div className="column">
-        <input id="Title" className="input" type="text" placeHolder="NAME"></input>
+        <input id="Title" className="input" type="text" placeHolder="NUMBER OF KIDS"></input>
 
       </div>
-      <div className="column">
-        <input id="Title" className="input" type="text" placeHolder="STATE"></input>
-
-      </div>
-      <div className="column">
-        <input id="Title" className="input" type="text" placeHolder="COLOR"></input>
-
-      </div>
+      
       <div className= "column">
-        <button class="button"  >SUBMIT FRUIT</button>
+        <button class="button"  >SUBMIT DETAILS</button>
       </div>
 
       </div>
         
         <table className="table" >
         <thead style = {{fontSize:20,fontFamily:"Lucida Sans"}}>
-              FRUIT TABLE 
+              TABLE WITH STUDENTS IN PARTICULAR MAJOR.
             </thead>
 
             <tbody>
               <tr>
-                <th>
+              <th>
                   ID
                                 </th>
+                
                 <th>
-                  NAME
+                  MAJOR
                                 </th>
 
                 <th>
-                  STATE
+                  NUMBER OF STUDENTS
                                 </th>
-                <th>
-                  COLOR
-                                </th>
+                
 
               </tr>
               {data.java.fruits.map(
@@ -61,8 +54,7 @@ const newtest = ({ data }) => (
                   <td>{el.id}</td>
                   <td>{el.name}</td>
                   <td>{el.state}</td>
-                  <td>{el.color}</td>
-
+                  
                 </tr>
 
               )}
@@ -75,7 +67,7 @@ const newtest = ({ data }) => (
 
 )
 export const query = graphql`
-query MyQuery {
+query fruitQuery {
   java{
   
     fruits{
@@ -88,4 +80,4 @@ query MyQuery {
    
 }
 `
-export default newtest
+export default newmajorpage
